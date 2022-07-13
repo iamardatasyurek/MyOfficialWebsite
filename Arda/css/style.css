@@ -1,21 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=The+Nautigal:wght@400;700&display=swap&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: auto;
+}
+
 body{   
     margin: 0;
+    font-family: 'Roboto Mono', monospace;
 }
-.container{
-    
+
+.container{   
     width: 65%;
     margin: 0 auto;
 }
 
 table{
     border-collapse: collapse;
-}
-
-.row td{
-    
-    width: 50%;
-    text-align: center;
-    padding: 20px ;
 }
 
 .color-7a3b2e{
@@ -25,11 +31,33 @@ table{
 .right-border{
     border-right: #7a3b2e 2px solid;
 }
+
 .bottom-border{
     border-bottom: #7a3b2e 2px solid;
 }
+
 .bottom-border-d{
     border-bottom: #7a3b2e 3px dotted;
+}
+
+.section-title{
+    font-size: 2.8em;
+    text-align: center;
+    color:#7a3b2e;
+}
+
+.col-2{
+    display: inline-block;
+    width: calc(50%);
+}
+.padding-65{
+    padding-bottom: 65px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------*/
@@ -39,7 +67,8 @@ table{
     position:fixed;
     width: 100%;
     height: 65px;
-    margin-top: -65px;
+    top: 0;
+    left: 0;
 }
 
 .logo{
@@ -51,13 +80,14 @@ table{
     color: #bd5734;
     font-size: 40px;
     font-family: 'The Nautigal', cursive;
+    text-shadow: 1px 3px #7a3b2e;
+    transition: color 0.3s;
 }
 
 .logo:hover{
     color: #a79e84;
     
 }
-
 
 .main-nav{
     display: inline-block;
@@ -69,71 +99,98 @@ table{
 
 .main-nav-items{
     list-style-type: none;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .main-nav-item{
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 6px;
 }
 
 .main-nav-item-link{
     text-decoration: none;
     color:#a79e84 ;
+    transition: color 0.3s;
 }
 
 .main-nav-item-link:hover{
     color: #7a3b2e;
 }
 
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.col-2{
-    display: inline-block;
-    width: calc(50%);
-    height: 700px;
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.scroll-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
 }
 
+.scroll-btn a{
+    text-decoration: none;
+    color: #7a3b2e;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+.scroll-btn a:hover{
+    color:#bd5734;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 #my-links{
-    margin-top: 65px;
-    box-sizing: border-box;
+    margin-top: 65px ;
 }
 
 .links{
+    padding-top: 35px;
     background-color:#dbceb0;
-    font-family: 'Roboto Mono', monospace;
+    height: 700px;
+    float: left;
+    text-align: center;
 }
 
 .links-table{
-    font-size: 1.5em;
-    width: 10%;
-    margin: auto;
+    width: 70%;
+    margin: 20px auto;
+    font-size: 1.3em;
+}
+.links-table table{
+    margin: 0px auto;
+}
+.links-table tr{
+    width: 100%;
+}
+.links-table td{
+    padding: 20px 30px;
     text-align: center;
-    vertical-align: middle;
 }
 
 .links-table-title{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 20px;
     font-weight: 500;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
-    color: #7a3b2e;
+    font-size: 2.5em;
 }
 
 .links-table a{
     text-decoration: none;
     color: inherit;
     font-weight: 400;
+    transition: color 0.3s;
+    transition: font-weight .4s ease-in-out
 }
 .links-table a:hover{
     color: #7a3b2e;
+    font-weight: 700;
 }
 
 .link-born{
-    font-size: 0.8em;
+    font-size: 1em;
+    padding-bottom: 20px;
+    font-weight: 400;
+    width: 60%;
+    margin: 15px auto;
+    padding: 15px 0;
 }
 
 .links-table i{
@@ -141,39 +198,27 @@ table{
 }
 
 
-
-
 .my-links-photo{
+    float: left;
     background-image: url("../img/about.jpg");
     background-position: left;
     background-size: cover;
+    height: 700px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------*/
 #about{
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
-.about-text{
-    vertical-align:top;    
+.about-text{   
     color: #3b3a30;
-}
-
-.about-text h2, .about-text p{
     padding:10px 60px;
-    font-family: 'Roboto Mono', monospace;
+    text-align: center;
 }
 
-.about-text h2{  
-    font-size: 2.8em;
-    text-align: center;
-    color:#7a3b2e;
-}
-
-.about-text p{
-    text-align: center;
+.about-text p{  
     padding-top: 10px;
-    vertical-align: middle;
     font-size: 19px;
 }
 
@@ -183,30 +228,34 @@ table{
 
 #projects{
     height: auto;
-    background-color: #a79e84;
-    margin-bottom: 10px;
+    /* background-color: #a79e84; */
+    margin-bottom: 60px;
     text-align: center;
+    
+    background-image: url("../img/projects-bg6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
     
 }
 
-
 .projects-title{
-    color:#7a3b2e;
-    font-size: 2.8em;
     padding-top: 40px;
-    font-family: 'Roboto Mono', monospace;
 }
 
 
 .project-title{
     font-size: 19px;
-    color:#3b3a30;
-    font-family: 'Roboto Mono', monospace;
+    /* color:#3b3a30; */
+    color: whitesmoke;
 }
 
 .project-title a{
     text-decoration: none;
     color:#bd5734;
+    transition: color 0.3s;
 }
 
 .project-title a:hover{
@@ -220,30 +269,22 @@ table{
 
 .project-about p{
     padding:10px 60px;
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-    padding-top: 10px;
-    vertical-align: middle;
     font-size: 19px;
-    margin-bottom: 60px;
 }
 
-.padding-20{
-    padding-bottom: 25px;
-}
+
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #education-experience{
     font-family: 'Noto Serif', serif;
 }
 
-.education-experience-title{
-    text-align: center;
-    font-size: 2.8em;
-    color:#7a3b2e;
-    padding-top: 20px;
-}
 
+.education-experience-features td{  
+    width: 50%;
+    text-align: center;
+    padding: 20px ;
+}
 .education-experience-features{
     width: 100%;
     margin-top: 70px;
@@ -263,9 +304,6 @@ table{
 
 .extras-title{
     padding-top: 40px;
-    text-align: center;
-    font-size: 2.8em;
-    color:#7a3b2e;
 }
 
 .extras-lists{
@@ -318,38 +356,39 @@ table{
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-footer{
+.main-footer{
     background-color:#686256;
     height: 80px;
     text-align: center;
+    margin-bottom: -5px;
 }
 
-footer ul{
+.main-footer ul{
     padding: 20px 0;
     font-size: 25px;
     margin: 0 auto;
     list-style-type: none;
 }
-footer li{
+.main-footer li{
     display: inline-block;
     padding: 0 10px;
 }
 
-footer li a{
+.main-footer li a{
     text-decoration: none;
     color: #bd5734;
+    transition: color 0.3s;
 }
 
-footer li a:hover{
+.main-footer li a:hover{
     color:#dbceb0
 }
 
 .footer-end{
     margin-top: 0;
-    padding-top: 0;
+    margin-bottom: 0;
     background-color:#454140;
-    height: 40px;
+    height: 45px;
     text-align: center;
 
 }

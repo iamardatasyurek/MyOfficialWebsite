@@ -13,22 +13,8 @@
     <script src="https://kit.fontawesome.com/9fa9c53535.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=The+Nautigal&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    
-
-
-
-
 </head>
-<body>
+<body id="body">
     <header id="main-header">
         <div class="container">
             <a href="#" class="logo">iamardatasyurek</a>
@@ -44,45 +30,49 @@
     </header>
 
     <main>
-        <section id="my-links" class="row"> 
+
+        <section class="scroll-btn">
+            <a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        </section>
+
+        <section id="my-links" class="row clearfix"> 
             <div class="col-2 links">
-                <table class="links-table">
-                    <caption align="top" class="links-table-title">Arda Taşyürek</caption>
-                    <tbody>
-                        <tr class="link-born">
-                            <td colspan="2">Born on July 28th, 1997</td>
-                        </tr>
-                        <tr class="link-born">
-                            <td colspan="2" class="bottom-border-d">Ankara – Turkey</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-phone"></i></td>
-                            <td><a href="tel:+905319870716">+905319870716</a> </td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-envelope"></i></td>
-                            <td><a href="mailto:iamardatasyurek@gmail.com">iamardatasyurek@gmail.com</a></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-brands fa-linkedin-in"></i></td>
-                            <td><a href="https://www.linkedin.com/in/iamardatasyurek" target="_blank">iamardatasyurek</a></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-brands fa-github"></i></td>
-                            <td><a href="https://github.com/iamardatasyurek" target="_blank">iamardatasyurek</a></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-file"></i></td>
-                            <td><a href="../pdf/ArdaTasyurekCV2.pdf" download="ArdaTasyurekCV.pdf">Download My CV</a></td>
-                        </tr>
-                    </tbody>
-                </table>             
-            </div><div class="col-2 my-links-photo">
+                <h2 class="section-title links-table-title">Arda Taşyürek</h2>
+                <h3 class="link-born">Born on July 28th, 1997</h3>
+                <h3 class="link-born bottom-border-d">Ankara – Turkey</h3>
+                <div class="links-table">
+                    <table>                       
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-phone"></i></td>
+                                <td><a href="tel:+905319870716">+905319870716</a> </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-envelope"></i></td>
+                                <td><a href="mailto:iamardatasyurek@gmail.com">iamardatasyurek@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-brands fa-linkedin-in"></i></td>
+                                <td><a href="https://www.linkedin.com/in/iamardatasyurek" target="_blank">iamardatasyurek</a></td>
+                            </tr>                            
+                            <tr>
+                                <td><i class="fa-brands fa-github"></i></td>
+                                <td><a href="https://github.com/iamardatasyurek" target="_blank">iamardatasyurek</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-file"></i></td>
+                                <td><a href="../pdf/ArdaTasyurekCV2.pdf" download="ArdaTasyurekCV.pdf">Download My CV</a></td>
+                            </tr>
+                        </tbody>
+                    </table>  
+                </div>                                  
+            </div>
+            <div class="col-2 my-links-photo">
             </div>
         </section>
         
-        <section id="about" class="container about-text">
-            <h2>About Me</h2>
+        <section id="about" class="container about-text ">
+            <h2 class="section-title">About Me</h2>
             <p>
                 Graduated from Kirikkale University Computer Engineering
                 Department.Worked on different projects. Currently progressing
@@ -97,7 +87,7 @@
         </section>
         
         <section id="projects">
-            <h2 class="projects-title">Projects</h2>
+            <h2 class="section-title projects-title">Projects</h2>
             <div class="container"> 
                 <div class="project-about bottom-border">
                     <h3 class="project-title">Solve The Traveling Salesman Problem Using An Ant Colony Optimization Algorithm | 
@@ -130,7 +120,7 @@
                         I tried to solve the knapsack problem using a genetic algorithm and I ran the solution with CPU and GPU to compared it.
                     </p>
                 </div>
-                <div class="project-about padding-20">
+                <div class="project-about padding-65">
                     <h3 class="project-title">Unity 2D Platform Game With a Story</h3>
                     <p>
                         I have learned how things work and experienced 2D game.
@@ -141,7 +131,7 @@
         </section>
 
         <section id="education-experience" class="container">
-            <h2 class="education-experience-title">Education & Experience</h2>
+            <h2 class="section-title">Education & Experience</h2>
             <table class="education-experience-features">
                 <tbody class="row">
                     <tr>
@@ -173,7 +163,7 @@
         
         <section id="extras">
             <div class="container">
-                <h2 class="extras-title">Extras</h2>
+                <h2 class="section-title extras-title">Extras</h2>
                 <div class="extras-lists">
                     <div class="col-3">
                         <h3>Skills</h3>
@@ -262,17 +252,20 @@
     </main>
 
     <footer>
-        <div class="container">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/iamardatasyurek" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/iamardatasyurek" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.instagram.com/iamardatasyurek" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/iamardatasyurek" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
+        <div class="main-footer">
+            <div class="container">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/iamardatasyurek" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/iamardatasyurek" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/iamardatasyurek" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/iamardatasyurek" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-end">
+                <p>2022 - Current &copy;</p>
+            </div>
         </div>
-        <div class="footer-end">
-            <p>2022 - Current &copy;</p>
-        </div>
+        
     </footer>
 </body>
 </html>
