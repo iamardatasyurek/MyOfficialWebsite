@@ -1,0 +1,413 @@
+body{   
+    margin: 0;
+}
+.container{
+    
+    width: 65%;
+    margin: 0 auto;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.row td{
+    
+    width: 50%;
+    text-align: center;
+    padding: 20px ;
+}
+
+.color-7a3b2e{
+    color: #7a3b2e;
+}
+
+.right-border{
+    border-right: #7a3b2e 2px solid;
+}
+.bottom-border{
+    border-bottom: #7a3b2e 2px solid;
+}
+.bottom-border-d{
+    border-bottom: #7a3b2e 3px dotted;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+#main-header{
+    background-color: #454140;
+    position:fixed;
+    width: 100%;
+    height: 65px;
+    margin-top: -65px;
+}
+
+.logo{
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #bd5734;
+    font-size: 40px;
+    font-family: 'The Nautigal', cursive;
+}
+
+.logo:hover{
+    color: #a79e84;
+    
+}
+
+
+.main-nav{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 5px;
+    width: calc(100% - 240px);
+    text-align: right;
+}
+
+.main-nav-items{
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.main-nav-item{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.main-nav-item-link{
+    text-decoration: none;
+    color:#a79e84 ;
+}
+
+.main-nav-item-link:hover{
+    color: #7a3b2e;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.col-2{
+    display: inline-block;
+    width: calc(50%);
+    height: 700px;
+}
+
+#my-links{
+    margin-top: 65px;
+    box-sizing: border-box;
+}
+
+.links{
+    background-color:#dbceb0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.links-table{
+    font-size: 1.5em;
+    width: 10%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.links-table-title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    color: #7a3b2e;
+}
+
+.links-table a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+}
+.links-table a:hover{
+    color: #7a3b2e;
+}
+
+.link-born{
+    font-size: 0.8em;
+}
+
+.links-table i{
+    color: #bd5734;
+}
+
+
+
+
+.my-links-photo{
+    background-image: url("../img/about.jpg");
+    background-position: left;
+    background-size: cover;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+#about{
+    margin-bottom: 80px;
+}
+
+.about-text{
+    vertical-align:top;    
+    color: #3b3a30;
+}
+
+.about-text h2, .about-text p{
+    padding:10px 60px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.about-text h2{  
+    font-size: 2.8em;
+    text-align: center;
+    color:#7a3b2e;
+}
+
+.about-text p{
+    text-align: center;
+    padding-top: 10px;
+    vertical-align: middle;
+    font-size: 19px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+#projects{
+    height: auto;
+    background-color: #a79e84;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+
+.projects-title{
+    color:#7a3b2e;
+    font-size: 2.8em;
+    padding-top: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.project-title{
+    font-size: 19px;
+    color:#3b3a30;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.project-title a{
+    text-decoration: none;
+    color:#bd5734;
+}
+
+.project-title a:hover{
+    color: #7a3b2e;
+}
+
+.project-about h3{
+    margin-top: 50px;
+    
+}
+
+.project-about p{
+    padding:10px 60px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    padding-top: 10px;
+    vertical-align: middle;
+    font-size: 19px;
+    margin-bottom: 60px;
+}
+
+.padding-20{
+    padding-bottom: 25px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#education-experience{
+    font-family: 'Noto Serif', serif;
+}
+
+.education-experience-title{
+    text-align: center;
+    font-size: 2.8em;
+    color:#7a3b2e;
+    padding-top: 20px;
+}
+
+.education-experience-features{
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#extras{
+    color: #3b3a30;
+    font-family: 'Roboto Mono', monospace;
+    background-color:#dbceb0;
+    height: auto;
+    color: #686256;
+}
+
+.extras-title{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 2.8em;
+    color:#7a3b2e;
+}
+
+.extras-lists{
+    padding-bottom: 50px;
+}
+
+
+.col-3{
+    display: inline-block;
+    width: calc(100%/3);
+    margin:20px auto;
+    vertical-align: top;
+    text-align: center;
+}
+
+.col-3 table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.col-3 td{
+    padding: 10px 21px;
+}
+
+.col-3 h3,.extras-row h3{
+    color:#7a3b2e;
+    font-size: 25px;
+}
+
+.table-bold{
+    font-weight: 900;
+}
+
+.table-hobies td{
+    text-align: center;
+}
+
+.extras-row{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.extras-row p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+footer{
+    background-color:#686256;
+    height: 80px;
+    text-align: center;
+}
+
+footer ul{
+    padding: 20px 0;
+    font-size: 25px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+footer li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+footer li a{
+    text-decoration: none;
+    color: #bd5734;
+}
+
+footer li a:hover{
+    color:#dbceb0
+}
+
+.footer-end{
+    margin-top: 0;
+    padding-top: 0;
+    background-color:#454140;
+    height: 40px;
+    text-align: center;
+
+}
+
+.footer-end p{
+    margin-top: 0;
+    padding: 10px 0;
+    color:#dbceb0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
