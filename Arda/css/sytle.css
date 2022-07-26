@@ -87,7 +87,7 @@ p{
 
 .header{
     background-color: var(--dark);
-    height: 10vh;
+    height: 80px;
     opacity: 0.85;
     position: fixed;
     width: 100%;
@@ -99,7 +99,6 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;   
-    padding-top:1rem ;   
     position: relative;
 }
 
@@ -128,7 +127,7 @@ p{
 
 .navbar li a{
     display: block;
-    padding: 1rem;             
+    padding: 0 1rem;             
     font-size: 1.7rem;
     color: var(--light);
     transition: all .2s linear;
@@ -378,7 +377,7 @@ p{
 
 
 
-/* telefon */
+
 @media(max-width:575px){
     html{
         font-size: 8px;
@@ -519,8 +518,7 @@ p{
     /* footer */
 }
 
-/* landscape - yan kullanmıs telefon */
-@media (min-width: 576px) and (max-width:991px){
+@media (min-width: 576px) and (max-width:990px){
     html{
         font-size: 8px;
     }
@@ -535,9 +533,7 @@ p{
 
     /* header */
 
-    .header{
-        height: 80px;
-    }
+    
     .navbar{   
         padding-left: 10px;
         padding-top: 30px;
@@ -665,7 +661,6 @@ p{
     /* footer */
 }
 
-/* tablet */
 @media (min-width: 768px) and (max-width:991px){
     html{
         font-size: 10px;
@@ -681,9 +676,7 @@ p{
 
     /* header */
 
-    .header{
-        height: 80px;
-    }
+    
     .navbar{   
         padding-left: 10px;
         padding-top: 30px;
@@ -812,8 +805,7 @@ p{
     /* footer */
 }
 
-/* desktop - normal ekran */
-@media (min-width: 992px) and (max-width:1199px){
+@media (min-width: 990px) and (max-width:1199px){
     html{
         font-size: 10px;
     }
@@ -827,13 +819,12 @@ p{
     
 }
 
-/* large desktop */
 @media (min-width: 1200px) and (max-width:1399px){
     html{
         font-size: 11px;
     }
     .navbar{
-        padding-top: 15px;
+        padding-top: 20px;
     }
     .projects{
         height: auto;
@@ -849,10 +840,34 @@ p{
     }
 }
 
-/* xlarge desktop */
-@media (min-width: 1400px){
+@media (min-width: 1400px) and (max-width:1999px){
     html{
         font-size: 12px;
+    }
+    .navbar{
+        padding-top: 20px;
+    }
+    .projects{
+        height: auto;
+    }
+    .project-cards{
+        padding-bottom: 50px;
+    }
+    .project-card{
+        height: 350px;
+    }
+    .extras{
+        height: 600px;
+    }
+    
+}
+
+@media (min-width: 2000px){
+    html{
+        font-size: 12px;
+    }
+    .container{
+        width: 50%;
     }
     .navbar{
         padding-top: 20px;
