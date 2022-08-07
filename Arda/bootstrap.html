@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Web Page">
+    <meta name="keywords" content="Arda Tasyurek, Arda Taşyürek, iamardatasyurek">
+    <meta name="author" content="Arda Taşyürek">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <title>iamardatasyurek</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark-gray py-3 sticky-top">
+        <div class="container">
+            <div class="logo navbar-brand">
+                <i class="fa-solid fa-terminal"></i>
+                    iamardatasyurek
+                <a href="index.html" class="typewrite d-none d-sm-none d-md-inline-block" data-period="3000" 
+                data-type='[".Run();"]'>
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mobile" class="offcanvas offcanvas-start bg-dark">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title border-bottom pb-2 text-center w-100">
+                        <i class="fa-solid fa-font"></i>
+                    </h5>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#home__about" class="nav-link">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#home__projects" class="nav-link active">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#home__education" class="nav-link active">Education & Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#home__contact" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                </div>               
+            </div>       
+        </div>
+    </nav>
+
+    <!-- My Contact Links -->
+    <section id="home__links">
+        <div class="row m-0 p-0">
+            <div class="title d-none d-md-flex col-md-6 justify-content-center align-items-center" style="height:100vh;">
+                <h2>Welcome to My <span>Bootstrap</span> Webpage</h2>
+            </div>
+            <div class="contact-table col-sm-12 col-md-6 text-center d-flex flex-column justify-content-center align-items-center">
+                <h2>Arda Taşyürek</h2>
+                <h3>Born on July 28th, 1997</h3>
+                <h3>Ankara &#45; Turkey</h3>
+                <table>
+                    <tr>
+                        <td><i class="fa-solid fa-phone"></i></td>
+                        <td><a href="tel:+905319870716">+905319870716</a> </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-envelope"></i></td>
+                        <td><a href="mailto:iamardatasyurek@gmail.com">iamardatasyurek@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-brands fa-linkedin-in"></i></td>
+                        <td><a href="https://www.linkedin.com/in/iamardatasyurek" target="_blank">iamardatasyurek</a></td>
+                    </tr>                            
+                    <tr>
+                        <td><i class="fa-brands fa-github"></i></td>
+                        <td><a href="https://github.com/iamardatasyurek" target="_blank">iamardatasyurek</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-file"></i></td>
+                        <td><a href="pdf/ArdaTasyurekCV2.pdf" download="ArdaTasyurekCV.pdf">Download My CV</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- About Me -->
+    <section id="home__about" class="mt-5 mb-5">
+        <div class="container text-center">
+            <h2 class="section-titles">About Me</h2>
+            <p class="lead">
+                Graduated from Kirikkale University Computer Engineering Department.Worked on different projects.Currently progressing
+                in front end development and make game with Unity. Care about code readability and OOP while working. I have a structure that works with all its strength to fulfill the given tasks and is open to innovations and learning. I want to work on projects
+                that will enable me to apply the knowledge I have learned in practice and to improve my existing knowledge by finding the
+                opportunity to work with experienced software developers.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="home__projects" class="pb-5">
+        <div class="container pb-5">
+            <h2 class="section-titles projects-title text-center">Projects</h2>
+            <div class="row g-4 ">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card p-3">
+                        <div class="card-title">
+                            <h3>Designed My Official Website | 
+                                <a href="https://github.com/iamardatasyurek/MyOfficialWebsite" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="card-body ps-0">
+                            <p>
+                                I design my website and update it constantly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card p-3">
+                        <div class="card-title">
+                            <h3>Solve The Traveling Salesman Problem Using An Ant    Colony Optimization Algorithm | 
+                                <a href="https://github.com/iamardatasyurek/Travelling-Salesman-Problem" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="card-body ps-0">
+                            <p>
+                                I tried to solve the traveling salesman problem using an ant colony optimization algorithm to find the shortest path.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card p-3">
+                        <div class="card-title">
+                            <h3>Unity 3D Survival FPS Game | 
+                                <a href="https://github.com/iamardatasyurek/the-end-of-the-world" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="card-body ps-0">
+                            <p>
+                                It has many features such as audio, user interface, recoil and reload systems. Used and gained a lot of knowledge about
+                                coroutines, animations, most common Unity packages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card p-3">
+                        <div class="card-title">
+                            <h3>Solve The Knapsack Problem Using A Genetic Algorithm | 
+                                <a href="https://github.com/iamardatasyurek/Knapsack-Problem" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="card-body ps-0">
+                            <p>
+                                I tried to solve the knapsack problem using a genetic algorithm and I ran the solution with CPU and GPU to compared it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card p-3">
+                        <div class="card-title">
+                            <h3>Unity 2D Platform Game With a Story
+                            </h3>
+                        </div>
+                        <div class="card-body ps-0">
+                            <p>
+                                I have learned how things work and experienced 2D game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section id="home__education" class="text-center mb-5">
+        <h2 class="section-titles my-5">Education & Experience</h2>
+        <div class="container">
+            <div class="education-container">
+                <div class="education-container__item">
+                    <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100 border-end border-secondary border-3">
+                        <h2 class="my-5">
+                            Kirikkale University<br> 
+                            <span class="text-secondary">
+                                Computer Engineering
+                            </span> 
+                        </h2>
+                    </div>                   
+                    <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100">
+                        <h3><span class="text-secondary"> 2017 &#45; 2022</span></h3>  
+                        GPA:2.99/4.00
+                    </div>
+                </div>
+                <div class="education-container__item">
+                    <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100 border-end border-secondary border-3 order-last order-md-first">
+                        <h3><span class="text-secondary">05.08.2020 &#45; 28.08.2020</span></h3>
+                            I have developed a FPS game on Unity. <br>
+                            I have learned how things work in the game community.
+                    </div>                   
+                    <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100 order-first order-md-last">
+                        <h2 class="my-5"><span class="text-secondary">Intern |</span> Kirikkale University </h2>
+                    </div>
+                </div>
+                <div class="education-container__item">
+                    <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100 border-end border-secondary border-3">
+                        <h2 class="my-5"><span class="text-secondary">Intern |</span> Omedya Bilisim</h2>
+                    </div>                   
+                    <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100"> 
+                        <h3><span class="text-secondary">01.07.2019 &#45; 26.07.2019</span></h3>
+                            I have learned web design with Bootstrap. <br>
+                            I learned about website design stages.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="home__contact" class="py-5">
+        <div class="container">
+            <div class="row g-sm-5">
+                <div class="skills col-sm-12 col-md-6 mb-5 mb-md-0">
+                    <h2 class="section-titles text-center">Skills</h2>
+                    <div class="row align-items-start">
+                        <div class="col-sm-12 col-lg-6 mb-3 mb-md-0">
+                                <table class="me-sm-auto ms-sm-auto ">
+                                    <tr>
+                                        <td>C&#35;</td>
+                                        <td>
+                                            <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java</td>
+                                        <td>
+                                            <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HTML&#38;CSS</td>
+                                        <td>
+                                            <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Unity</td>
+                                        <td>
+                                            <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i> <i class="fa-regular fa-circle"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Photoshop</td>
+                                        <td>
+                                            <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i> <i class="fa-regular fa-circle"></i> <i class="fa-regular fa-circle"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blender</td>
+                                        <td>
+                                            <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i> <i class="fa-regular fa-circle"></i> <i class="fa-regular fa-circle"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
+                                <table class="me-sm-auto ms-sm-auto mt-sm-3 mt-lg-0">
+                                    <tr>
+                                        <td>Turkish</td>
+                                        <td>Native</td>
+                                    </tr>
+                                    <tr>
+                                        <td>English</td>
+                                        <td>B1</td>
+                                    </tr>
+                                </table>
+                        </div>    
+                    </div>                    
+                </div>
+                <div class="contact-form col-sm-12 col-md-6">
+                    <h2 class="section-titles text-center">Contact</h2>
+                    <form action="https://formspree.io/f/xlevrjgn" method="POST"> 
+                        <div class="row">
+                            <div class="col-10 ms-auto me-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" name="fullname" id="fullname" placeholder="Ad Soyad" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" name="subject" id="subject" placeholder="Konu" class="form-control">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-10 ms-auto me-auto mt-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="tel" name="tel" id="tel" placeholder="Telefon" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 ms-auto me-auto mt-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <textarea class="form-control" placeholder="Mesaj..." id="message" style="height: 100px"></textarea>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-10 ms-auto me-auto mt-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-grid gap-2">
+                                            <button type="submit" class="btn btn-primary">Gönder</button>
+                                        </div> 
+                                    </div>
+                                    
+                                </div>
+                            </div>                   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="text-center bg-gray">
+        <div class="social-icons d-flex justify-content-center align-items-center">
+            <div>
+                <a href="https://www.linkedin.com/in/iamardatasyurek" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div>
+                <a href="https://github.com/iamardatasyurek" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/iamardatasyurek" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/iamardatasyurek" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-shoes">
+            <p>Copyright &copy; 2022, All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- up -->
+    <div class="up">
+        <a href="#">
+            <i class="fa-regular fa-square-caret-down fa-2x"></i>
+        </a>
+    </div>
+    <!-- scripts -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/type-writer.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
